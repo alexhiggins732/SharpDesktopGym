@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopGym", "DesktopGym\DesktopGym.csproj", "{F2004D03-97CF-49C7-90DE-72D656358B51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MousepadSimulator", "MousepadSimulator\MousepadSimulator.csproj", "{7042E092-BC5A-4686-B76B-0ED6A8540133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseSimulatorGui", "MouseSimulatorGui\MouseSimulatorGui.csproj", "{14519D77-099E-4CFF-87D7-481722AEB090}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DesktopGymPy", "DesktopGymPy\DesktopGymPy.pyproj", "{6BFEE86D-BDAD-4752-8B54-EE868C266560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2004D03-97CF-49C7-90DE-72D656358B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2004D03-97CF-49C7-90DE-72D656358B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2004D03-97CF-49C7-90DE-72D656358B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2004D03-97CF-49C7-90DE-72D656358B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7042E092-BC5A-4686-B76B-0ED6A8540133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7042E092-BC5A-4686-B76B-0ED6A8540133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7042E092-BC5A-4686-B76B-0ED6A8540133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7042E092-BC5A-4686-B76B-0ED6A8540133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14519D77-099E-4CFF-87D7-481722AEB090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14519D77-099E-4CFF-87D7-481722AEB090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14519D77-099E-4CFF-87D7-481722AEB090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14519D77-099E-4CFF-87D7-481722AEB090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFEE86D-BDAD-4752-8B54-EE868C266560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFEE86D-BDAD-4752-8B54-EE868C266560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F85A1D5-2366-44BA-9ADA-1D15D9FF1A37}
+	EndGlobalSection
+EndGlobal
