@@ -1,6 +1,6 @@
 # SharpDesktopGym
 
-SharpDesktopGym uses [Python.NET](https://pythonnet.github.io/) to build C# environments for interaction [TensorFlow Agents](https://www.tensorflow.org/agents) written in Python.
+[SharpDesktopGym](https://github.com/alexhiggins732/SharpDesktopGym) uses [Python.NET](https://pythonnet.github.io/) to build C# environments for interaction [TensorFlow Agents](https://www.tensorflow.org/agents) written in Python.
 
 This repository contains working samples of OpenAI Gym style Tensorflow Agent environments written using C# that can be trained by TensorFlow Agents written in Python.
 
