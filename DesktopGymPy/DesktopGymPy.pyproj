@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6bfee86d-bdad-4752-8b54-ee868c266560</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DesktopGymPy.py</StartupFile>
+    <StartupFile>tf_agents\environments\example\tic_tac_toe_reinforce.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,9 +22,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DesktopGymPy.py" />
-    <Compile Include="ISharpEnvironment.py">
+    <Compile Include="netArrays.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tf_agents\environments\example\masked_cartpole.py" />
+    <Compile Include="tf_agents\environments\example\tic_tac_toe_environment.py" />
+    <Compile Include="tf_agents\environments\example\tic_tac_toe_reinforce.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tf_agents\environments\example\tic_tac_toe_random_moves.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tf_agents\environments\example\tic_tac_toe_environment_test.py" />
+    <Compile Include="tf_agents\tf_agents_api_test.py" />
+    <Compile Include="tf_agents\utils\test_utils.py" />
+    <Compile Include="tf_agents\utils\test_utils_test.py" />
+    <Compile Include="tf_agents\environments\example\TicTacToeSharpEnvironmentWrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tf_agents\" />
+    <Folder Include="tf_agents\environments\" />
+    <Folder Include="tf_agents\environments\example\" />
+    <Folder Include="tf_agents\utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
