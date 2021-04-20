@@ -43,9 +43,17 @@ For Example see the [tic_tac_toe_reinforce.py](src/DesktopGymPy/tf_agents/enviro
 
 ### Roadmap:
 
-- Implement additional environments
-- Implement additional agents
+- Additional environments
+- Additional agents
+- Virtual mouse driver environment
+- Virtual keyboard training environment
 - Implement a C# windows form application for veiwing agent training and replays.
-- Implement a replacement for the pythonvirtualdisplay to allow OpenAi ports to be visualized on Windows platforms.
+- Video recording and replay
+- Implement a replacement for the `pythonvirtualdisplay` to allow OpenAi environments to be visualized on Windows
+- Virtual PC desktop training environment (likely using Ubuntu running on Docker)
+- C# virtual stack machine environment for agent training.
+
+
+
 
 
