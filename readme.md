@@ -19,8 +19,16 @@ The [GymSharp](src/GymSharp "GymSharp") is the C# class library that contains th
 ### Example: 
 **Tic Tac Toe Enviornment:**
 - [tic_tac_toe_environment.py](src/DesktopGymPy/tf_agents/environments/example/tic_tac_toe_environment.py "tic_tac_toe_environment.py") contains the TensorFlow Agents Tic Tac Toe environment.
-- [TicTacToeSharpEnvironmentWrapper.py](src/DesktopGymPy/tf_agents/environments/example/tic_tac_toe_environment_test.py "TicTacToeSharpEnvironmentWrapper.py") contains the wrapper for the C# Tic Tac Toe environment.
+- [TicTacToeEnvironment.cs](src/GymSharp/TicTacToeSharEnvironment.cs "TicTacToeSharpEnvironment.cs") contains the CSharp implementation of the same environment.
+- [TicTacToeSharpEnvironmentWrapper.py](src/DesktopGymPy/tf_agents/environments/example/tic_tac_toe_environment_test.py "TicTacToeSharpEnvironmentWrapper.py") contains the wrapper which for the [TicTacToeEnvironment.cs](src/GymSharp/TicTacToeSharEnvironment.cs "TicTacToeSharpEnvironment.cs") C# Tic Tac Toe environment.
 
+Both the Python environment and the Python wrapper for the C# environment can be used as the target of Python unit tests and a training environment for TensorFlow agents.
+
+### Implementing a custom environment: 
+
+Using the base `SharpGenericEnvironment<TState, TAction>` (along with a Python Wrapper for your class) you can easily setup Python unit tests and train any of the TensorFlow agents to learn your custom environment.
+
+As an example the [TicTacToeSharpGenericEnvironment](src/GymSharp/TicTacToeSharpGenericEnvironment.cs "TicTacToeSharpGenericEnvironment.cs") is provided. This generic class builds upon the [TicTacToeEnvironment](src/GymSharp/TicTacToeSharEnvironment.cs "TicTacToeSharpEnvironment.cs") provided as a concrete example by using the base generic class to show how a custom environment can be setup implementing the base environment class for both unit tests and as target of TensorFlow agent training.
 
 ### Unit Tests: 
 There are unit tests written in both Python and C#. The python unit tests are in the same folder as the environment module. The CSharp unit tests are in the [GymSharp](src/GymSharpTests "GymSharpTests") class.
