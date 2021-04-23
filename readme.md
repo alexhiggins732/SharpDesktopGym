@@ -60,11 +60,11 @@ To achive this goal the following milestones have been set:
 - Virtual mouse driver environment (see feature branches).
 - Virtual keyboard training environment (see feature branches).
 - Implement a C# windows form application for viewing agent training and replays. ([Desktop recording already coded](https://github.com/alexhiggins732/CsharpMouseKeyboardDesktopLibrary))
-- Implement pre-existing [Video recording and replay]
+- Implement pre-existing [Video recording and replay](https://github.com/alexhiggins732/CsharpMouseKeyboardDesktopLibrary)
 - Implement a replacement for the `pythonvirtualdisplay` to allow OpenAi environments to be visualized on Windows.
 - Virtual PC desktop training environment (likely using Ubuntu running on Docker as working code for this milestone is already available [docker-ubuntu-vnc-desktop](https://github.com/alexhiggins732/docker-ubuntu-vnc-desktop).)
-  - C# virtual stack machine environment for agent training (Ground work already coded in [MachineLearningVirtualStackEngine](https://github.com/alexhiggins732/MachineLearningVirtualStackEngine)
-  - Provide REAL LOGIC based (not just math-based statistical classification) machine learning using genetic programming and fuzzy logic (as presented in [AForge.NET](https://github.com/alexhiggins732/AForge.NET)) that runs on AI opcode ran in a virtual stack machine.
+- C# virtual stack machine environment for agent training (Ground work already coded in [MachineLearningVirtualStackEngine](https://github.com/alexhiggins732/MachineLearningVirtualStackEngine))
+- Provide REAL LOGIC based (not just math-based statistical classification) machine learning using genetic programming and fuzzy logic (as presented in [AForge.NET](https://github.com/alexhiggins732/AForge.NET)) that runs on AI opcode ran in a virtual stack machine.
 
 
 
