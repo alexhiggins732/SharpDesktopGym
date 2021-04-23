@@ -67,10 +67,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartpoleSharpEnvironment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PythonInitiliazer.cs" />
     <Compile Include="PythonInterop.cs" />
+    <Compile Include="SharpGenericEnvironment.cs" />
     <Compile Include="StepType.cs" />
+    <Compile Include="TicTacToeSharpGenericEnvironment.cs" />
     <Compile Include="TicTacToeSharpEnvironment.cs" />
+    <Compile Include="TimeStep.cs" />
+    <Compile Include="TimeStep_t.cs" />
     <Compile Include="TupleHelper.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -12,12 +12,12 @@ using System.Runtime.CompilerServices;
 namespace GymSharp.Tests
 {
     [TestClass()]
-    public class TicTacToeSharpEnvironmentTests
+    public class TicTacToeSharpGenericEnvironmentTests
     {
         private dynamic np;
-        TicTacToeSharpEnvironment env;
+        TicTacToeSharpGenericEnvironment env;
 
-        public TicTacToeSharpEnvironmentTests()
+        public TicTacToeSharpGenericEnvironmentTests()
         {
             GymSharp.PythonInitiliazer.InitializePython();
         }
@@ -30,7 +30,7 @@ namespace GymSharp.Tests
                 np = Py.Import("numpy");
             }
             np.random.seed(0);
-            env = new TicTacToeSharpEnvironment(null);
+            env = new TicTacToeSharpGenericEnvironment(null);
             var ts = env.reset();
             (new int[3, 3]).AssertEquals(ts.observation);
         }
@@ -77,7 +77,7 @@ namespace GymSharp.Tests
             dynamic rng = np.random.RandomState(0);
             var expected = (int)rng.randint(10000);
             dynamic rng2 = np.random.RandomState(0);
-            var env = new TicTacToeSharpEnvironment(rng2);
+            var env = new TicTacToeSharpGenericEnvironment(rng2);
             var actual = env.randint(10000);
             Assert.AreEqual(expected, actual);
         }
@@ -85,7 +85,7 @@ namespace GymSharp.Tests
         [TestMethod()]
         public void test_opponent_play_deterministic()
         {
-            var env = new TicTacToeSharpEnvironment(null);
+            env = new TicTacToeSharpGenericEnvironment(null);
             //Assert.Fail();
             int[,] state1 = new[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 1 } };
             //self.env._opponent_play([[0, 0, 0], [0, 0, 0], [0, 0, 1]]))
@@ -116,7 +116,7 @@ namespace GymSharp.Tests
             {
                 dynamic np = Py.Import("numpy");
                 dynamic rng = np.random.RandomState(0);
-                var env = new TicTacToeSharpEnvironment(rng);
+                var env = new TicTacToeSharpGenericEnvironment(rng);
 
                 int[,] states = new[,] { { 0, 1, 2 }, { 0, 0, 0 }, { 0, 0, 1 } };
                 var legal_actions = env._legal_actions(states);

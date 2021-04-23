@@ -104,11 +104,11 @@ def asNumpyArray(netArray):
         if sourceHandle.IsAllocated: sourceHandle.Free()
     return npArray
 
-def asNumpyTupleArray(listArray):
+def asNumpyTupleArray(npArray):
     ''' Given a list of lists [[a,b,c], [d,e,f]] returns an array of tuples [(a,b,c), (d,e,f)]
     '''
-    if(isinstance(listArray,System.Array)):
-        py_array = asNumpyArray(listArray)
+    if(isinstance(npArray,System.Array)):
+        py_array = asNumpyArray(npArray)
         return [tuple(i) for i in py_array]
     return [tuple(i) for i in npArray]
 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6bfee86d-bdad-4752-8b54-ee868c266560</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tf_agents\environments\example\tic_tac_toe_reinforce.py</StartupFile>
+    <StartupFile>tf_agents\environments\example\tic_tac_toe_reinforce_generic.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,11 @@
     <Compile Include="netArrays.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tf_agents\environments\example\cart_pole_sharp_environment.py" />
+    <Compile Include="tf_agents\environments\example\TicTacToeSharpGenericEnvironmentWrapper.py" />
+    <Compile Include="tf_agents\environments\example\tic_tac_toe_generic_environment_test.py" />
+    <Compile Include="tf_agents\environments\example\tic_tac_toe_reinforce_generic.py" />
+    <Compile Include="tf_agents\environments\gym_net_wrapper.py" />
     <Compile Include="tf_agents\environments\example\masked_cartpole.py" />
     <Compile Include="tf_agents\environments\example\tic_tac_toe_environment.py" />
     <Compile Include="tf_agents\environments\example\tic_tac_toe_reinforce.py">
@@ -34,6 +39,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tf_agents\environments\example\tic_tac_toe_environment_test.py" />
+    <Compile Include="tf_agents\environments\gym_net_wrapper_test.py" />
+    <Compile Include="tf_agents\environments\gym_wrapper.py" />
+    <Compile Include="tf_agents\environments\gym_wrapper_test.py" />
     <Compile Include="tf_agents\tf_agents_api_test.py" />
     <Compile Include="tf_agents\utils\test_utils.py" />
     <Compile Include="tf_agents\utils\test_utils_test.py" />
