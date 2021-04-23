@@ -44,12 +44,12 @@ For Example see [TicTacToeSharpEnvironmentWrapper.py](src/DesktopGymPy/tf_agents
 
 Note: The C# unit tests should function by themselves without the need to be called by the Python unit tests. For example, see how Python.Net was used for Numpy random number generation which in the Python unit test is passed to the C# enviornment.
 
-### Training:
+## Training:
 Once your environment is passing all the unit tests, it is time to pick a TensorFlow Agent and being training. Training is simply a matter of creating an instance of your environment and passing it to the agent to train against.
 
 For Example see the [tic_tac_toe_reinforce.py](src/DesktopGymPy/tf_agents/environments/example/tic_tac_toe_reinforce.py "tic_tac_toe_reinforce.py") Reinforce agent, modeled from the original [TensorFlow REINFORCE tutorial](https://www.tensorflow.org/agents/tutorials/6_reinforce_tutorial "TensorFlow REINFORCE tutorial"). In theory, this agent should work any custom environment you implement.
 
-### Roadmap:
+## Roadmap:
 
 - Additional environments
 - Additional agents
