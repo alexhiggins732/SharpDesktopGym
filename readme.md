@@ -51,19 +51,20 @@ For Example see the [tic_tac_toe_reinforce.py](src/DesktopGymPy/tf_agents/enviro
 
 ## Roadmap:
 
-The end goal of this project is to provide a fundamental building block needed to bring the dawn of General Artificial Intellenge. To that end, the goal is to provide the full computer desktop experience to AI and Machine learning algorithmns using an abstraction that allows them to interact with the entire internet in the way a human would.
+The end goal of this project is to provide a fundamental building block needed to bring the dawn of General Artificial Intellenge. To that end, the goal is to provide the [full computer desktop experience](https://github.com/alexhiggins732/CsharpMouseKeyboardDesktopLibrary) to AI and Machine learning algorithmns using an abstraction that allows them to interact with the entire internet in the way a human would.
 
 To achive this goal the following milestones have been set:
 
 - Additional environments
 - Additional agents
-- Virtual mouse driver environment
-- Virtual keyboard training environment
-- Implement a C# windows form application for veiwing agent training and replays.
-- Video recording and replay
-- Implement a replacement for the `pythonvirtualdisplay` to allow OpenAi environments to be visualized on Windows
-- Virtual PC desktop training environment (likely using Ubuntu running on Docker)
-- C# virtual stack machine environment for agent training.
+- Virtual mouse driver environment (see feature branches).
+- Virtual keyboard training environment (see feature branches).
+- Implement a C# windows form application for viewing agent training and replays. ([Desktop recording already coded](https://github.com/alexhiggins732/CsharpMouseKeyboardDesktopLibrary))
+- Implement pre-existing [Video recording and replay]
+- Implement a replacement for the `pythonvirtualdisplay` to allow OpenAi environments to be visualized on Windows.
+- Virtual PC desktop training environment (likely using Ubuntu running on Docker as working code for this milestone is already available [docker-ubuntu-vnc-desktop](https://github.com/alexhiggins732/docker-ubuntu-vnc-desktop).)
+  - C# virtual stack machine environment for agent training (Ground work already coded in [MachineLearningVirtualStackEngine](https://github.com/alexhiggins732/MachineLearningVirtualStackEngine)
+  - Provide REAL LOGIC based (not just math-based statistical classification) machine learning using genetic programming and fuzzy logic (as presented in [AForge.NET](https://github.com/alexhiggins732/AForge.NET)) that runs on AI opcode ran in a virtual stack machine.
 
 
 
