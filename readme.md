@@ -16,7 +16,7 @@ The [Examples](src/DesktopGymPy/tf_agents/environments/example "Examples") folde
 
 The [GymSharp](src/GymSharp "GymSharp") is the C# class library that contains the enviornments, which implement the base environment abstract class as explained the [TensorFlow Agents Enviornment tutorial](https://www.tensorflow.org/agents/tutorials/2_environments_tutorial "TensorFlow Agents Enviornment tutorial ").
 
-### Example: 
+## Working Example: 
 **Tic Tac Toe Enviornment:**
 - [tic_tac_toe_environment.py](src/DesktopGymPy/tf_agents/environments/example/tic_tac_toe_environment.py "tic_tac_toe_environment.py") contains the TensorFlow Agents Tic Tac Toe environment.
 - [TicTacToeEnvironment.cs](src/GymSharp/TicTacToeSharEnvironment.cs "TicTacToeSharpEnvironment.cs") contains the CSharp implementation of the same environment.
