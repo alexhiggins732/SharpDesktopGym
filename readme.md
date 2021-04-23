@@ -51,6 +51,8 @@ For Example see the [tic_tac_toe_reinforce.py](src/DesktopGymPy/tf_agents/enviro
 
 ## Roadmap:
 
+The end goal of this project is to provide a fundamental building block needed to bring the dawn of General Artificial Intellenge. To that end, the goal is to provide the full computer desktop experience to AI and Machine learning algorithmns using an abstraction that allows them to interact with the entire internet in the way a human would. To achive this goal, the following milestones have been set.
+
 - Additional environments
 - Additional agents
 - Virtual mouse driver environment
