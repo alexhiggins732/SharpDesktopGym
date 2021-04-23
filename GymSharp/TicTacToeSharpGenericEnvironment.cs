@@ -24,8 +24,8 @@ namespace GymSharp
         readonly float[] penalties = new[] { 0f, -1f, -.8f, -.6f, -.4f, -.2f };
         private dynamic _rng;
         public bool UseDynamicReward = false;
-        
-        public TicTacToeSharpGenericEnvironment(dynamic rng, float discount = 1.0f)
+
+        public TicTacToeSharpGenericEnvironment(dynamic rng = null, float discount = 1.0f)
         {
             _rng = rng;
             this.discount = discount;
