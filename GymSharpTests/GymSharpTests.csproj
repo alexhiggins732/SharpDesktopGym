@@ -113,8 +113,10 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="AssertHelpers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicTacToeSharpGenericEnvironmentTests.cs" />
     <Compile Include="TicTacToeSharpEnvironmentTests.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -25,6 +25,8 @@
     <Compile Include="netArrays.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tf_agents\environments\example\cart_pole_sharp_environment.py" />
+    <Compile Include="tf_agents\environments\gym_net_wrapper.py" />
     <Compile Include="tf_agents\environments\example\masked_cartpole.py" />
     <Compile Include="tf_agents\environments\example\tic_tac_toe_environment.py" />
     <Compile Include="tf_agents\environments\example\tic_tac_toe_reinforce.py">
@@ -34,6 +36,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tf_agents\environments\example\tic_tac_toe_environment_test.py" />
+    <Compile Include="tf_agents\environments\gym_net_wrapper_test.py" />
+    <Compile Include="tf_agents\environments\gym_wrapper.py" />
+    <Compile Include="tf_agents\environments\gym_wrapper_test.py" />
     <Compile Include="tf_agents\tf_agents_api_test.py" />
     <Compile Include="tf_agents\utils\test_utils.py" />
     <Compile Include="tf_agents\utils\test_utils_test.py" />

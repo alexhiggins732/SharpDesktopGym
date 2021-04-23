@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace GymSharp
 {
-    public class TicTacToeSharpEnvironment
+    public class TicTacToeSharpGenericEnvironment :
+        SharpGenericEnvironment<int[,], int[]>
     {
 
-        static TicTacToeSharpEnvironment()
+        static TicTacToeSharpGenericEnvironment()
         {
             PythonInitiliazer.InitializePython();
         }
@@ -22,20 +23,9 @@ namespace GymSharp
         public readonly float[] REWARD_ILLEGAL_MOVE = { -.15f };
         readonly float[] penalties = new[] { 0f, -1f, -.8f, -.6f, -.4f, -.2f };
         private dynamic _rng;
-
-
-        public dynamic action_spec;
-        public dynamic observation_spec;
-        public dynamic _shape;
-        public TimeStep _current_time_step;
-
-        public int[,] _state;
-        public float discount;
-
-        private int steps = 0;
         public bool UseDynamicReward = false;
-
-        public TicTacToeSharpEnvironment(dynamic rng, float discount = 1.0f)
+        
+        public TicTacToeSharpGenericEnvironment(dynamic rng, float discount = 1.0f)
         {
             _rng = rng;
             this.discount = discount;
@@ -46,28 +36,22 @@ namespace GymSharp
             set_time_step((step_type, reward, discount, _state));
         }
 
-        public TimeStep current_time_step()
+        public override TimeStep<int[,]> current_time_step()
         {
-            return _current_time_step;
+            return base._current_time_step;
         }
 
-        public TimeStep reset()
+        public TimeStep<int[,]> reset()
         {
-            steps = 0;
-            _state = new int[3, 3];
-            this._current_time_step = new TimeStep(StepType.FIRST, 0, this.discount, _state);
-            return set_time_step((StepType.FIRST, 0, this.discount, _state));
-
+            return base.reset(() => new int[3, 3]);
         }
 
-        public TimeStep set_time_step(TimeStep timeStep)
+        protected override TimeStep<int[,]> _set_time_step(string step_type, float reward, float discount, int[,] _state)
         {
-            this._current_time_step = timeStep;
-            this._state = timeStep.observation;
-            return this._current_time_step;
+            return base.set_time_step(new TimeStep<int[,]>(step_type, reward, discount, _state));
         }
 
-        public TimeStep _step(int[] action)
+        public TimeStep<int[,]> _step(int[] action)
         {
             steps++;
             int[,] states = _state;
