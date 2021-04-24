@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace GymSharp
 {
+    public abstract class SharpGenericEnvironment<TState, TAction>
     {
         static SharpGenericEnvironment()
         {
