@@ -1,4 +1,10 @@
-﻿using System;
+﻿using Python.Runtime;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Drawing;
+using SixLabors.ImageSharp.Drawing.Processing;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -66,7 +72,7 @@ namespace GymSharp
             var n = DateTime.Now;
             var n2 = DateTime.Now;
             var ne = n2.Subtract(n);
-            var sec = ne.TotalSeconds
+            var sec = ne.TotalSeconds;
             Debug.Assert(Array.IndexOf((int[])action_spec, action) > -1,
                     $"{action} ({action.GetType().Name}) invalid action for {GetType().Name} environment");
             //get the last step data

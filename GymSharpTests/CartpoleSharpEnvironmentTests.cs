@@ -69,7 +69,7 @@ namespace GymSharp.Tests
         {
             var ts = env.reset();
             Assert.IsTrue(ts.observation.Length == 4);
-            Assert.IsTrue(ts.observation.All(x => x >= -.05 && x <= .5));
+            Assert.IsTrue(ts.observation.All(x => x >= -.05 && x <= .05));
             Assert.IsTrue(ts.is_First());
         }
 
@@ -78,7 +78,7 @@ namespace GymSharp.Tests
         {
             var ts = env.reset();
             Assert.IsTrue(ts.observation.Length == 4);
-            Assert.IsTrue(ts.observation.All(x => x >= -.05 && x <= .5));
+            Assert.IsTrue(ts.observation.All(x => x >= -.05 && x <= .05));
             Assert.IsTrue(ts.is_First());
             ts = env._step(0);
             Assert.IsTrue(ts.observation.Length == 4);
@@ -88,7 +88,17 @@ namespace GymSharp.Tests
             {
                 var obs = ts.observation[i];
                 var min = bounds[0, i];
-                var max = bounds[0, i];
+                var max = bounds[1, i];
+                Assert.IsTrue(obs >= min && obs <= max);
+            }
+            Assert.IsTrue(ts.is_First());
+
+            ts = env._step(0);
+            for (var i = 0; i < 4; i++)
+            {
+                var obs = ts.observation[i];
+                var min = bounds[0, i];
+                var max = bounds[1, i];
                 Assert.IsTrue(obs >= min && obs <= max);
             }
             Assert.IsTrue(ts.is_Mid());
