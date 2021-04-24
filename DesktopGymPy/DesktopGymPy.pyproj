@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6bfee86d-bdad-4752-8b54-ee868c266560</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tf_agents\environments\example\tic_tac_toe_reinforce_generic.py</StartupFile>
+    <StartupFile>tf_agents\environments\example\cart_pole_sharp_reinforce.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,8 +26,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tf_agents\environments\example\cart_pole_sharp_environment.py" />
+    <Compile Include="tf_agents\environments\example\CartpoleSharpEnvironment.py" />
     <Compile Include="tf_agents\environments\example\TicTacToeSharpGenericEnvironmentWrapper.py" />
     <Compile Include="tf_agents\environments\example\tic_tac_toe_generic_environment_test.py" />
+    <Compile Include="tf_agents\environments\example\cart_pole_sharp_reinforce.py" />
     <Compile Include="tf_agents\environments\example\tic_tac_toe_reinforce_generic.py" />
     <Compile Include="tf_agents\environments\gym_net_wrapper.py" />
     <Compile Include="tf_agents\environments\example\masked_cartpole.py" />

@@ -51,7 +51,7 @@ namespace GymSharp
             return base.set_time_step(new TimeStep<int[,]>(step_type, reward, discount, _state));
         }
 
-        public TimeStep<int[,]> _step(int[] action)
+        public override TimeStep<int[,]> _step(int[] action)
         {
             steps++;
             int[,] states = _state;
