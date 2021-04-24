@@ -11,8 +11,8 @@ namespace GymSharpTests
     {
         static void Main(string[] args)
         {
-            var test = new TicTacToeSharpEnvironmentTests();
-            test.test_randomint();
+            var test = new CartpoleSharpEnvironmentTests();
+            test.ConsoleColorTest();
         }
     }
 }

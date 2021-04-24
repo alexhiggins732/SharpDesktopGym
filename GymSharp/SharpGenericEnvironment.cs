@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace GymSharp
 {
-    public class SharpGenericEnvironment<TState, TAction>
     {
         static SharpGenericEnvironment()
         {
@@ -18,6 +17,7 @@ namespace GymSharp
         public TState _state;
         public TimeStep<TState> _current_time_step;
         protected int steps = 0;
+        public int StepCount => steps;
         public float discount;
 
         public SharpGenericEnvironment()
@@ -30,7 +30,7 @@ namespace GymSharp
             return _current_time_step;
         }
 
-        public TimeStep<TState> reset(Func<TState> stateGenerator)
+        public virtual TimeStep<TState> reset(Func<TState> stateGenerator)
         {
             steps = 0;
             //TODO: get shape of obersevation spec and initial default state using the shape.
@@ -39,6 +39,8 @@ namespace GymSharp
             return _current_time_step;
 
         }
+        public abstract TimeStep<TState> _step(TAction action);
+
 
         protected virtual TimeStep<TState> _set_time_step(string step_type, float reward, float discount, TState _state)
         {
@@ -50,6 +52,11 @@ namespace GymSharp
             this._current_time_step = timeStep;
             this._state = timeStep.observation;
             return this._current_time_step;
+        }
+
+        public virtual TimeStep<TState> _set_state(TState _state, string step_type, float reward, float discount)
+        {
+            return set_time_step((step_type, reward, discount, _state));
         }
     }
 }
