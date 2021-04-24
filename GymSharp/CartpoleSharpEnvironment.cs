@@ -1,10 +1,4 @@
-﻿using Python.Runtime;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Drawing;
-using SixLabors.ImageSharp.Drawing.Processing;
-using SixLabors.ImageSharp.PixelFormats;
-using SixLabors.ImageSharp.Processing;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -116,7 +110,7 @@ namespace GymSharp
             }
             else if (steps_beyond_done == -1)
             {
-
+  
                 // Pole just fell!
 
                 steps_beyond_done = 0;
