@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MousepadSimulator\MousepadSimulator.csproj">
+      <Project>{7042e092-bc5a-4686-b76b-0ed6a8540133}</Project>
+      <Name>MousepadSimulator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
